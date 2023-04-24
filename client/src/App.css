@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+
+}
+
+.form-fields {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 45px;
+  margin: auto;
+  background-color: crimson;
+  color: seashell;
+  width: 25vw;
+  padding: 10px;
+}
+
+.form-fields>input {
+  border-radius: 10px;
+}
+
+.submit-input {
+  background-color: blueviolet;
+  color: seashell;
+  padding: 15px;
+  border-radius: 15px;
+}
