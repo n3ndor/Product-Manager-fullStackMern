@@ -3,6 +3,7 @@ import axios from "axios";
 
 const CreateProduct = (props) => {
 
+    const [productList, setProductList] = props;
     const [title, setTitle] = useState("");
     const [price, setPrice] = useState("");
     const [description, setDescription] = useState("");
@@ -19,6 +20,7 @@ const CreateProduct = (props) => {
             .then((res) => {
                 console.log(res);
                 console.log(res.data)
+                setProductList([...productList, res.data])
                 setTitle("");
                 setPrice("");
                 setDescription("");
