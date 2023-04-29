@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import CreateProduct from '../components/CreateProduct';
 import DisplayAll from "../components/DisplayAll";
 

@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import axios from "axios";
 
-const CreateProduct = (props) => {
+const CreateProduct = ({ productList, setProductList }) => {
 
-    const [productList, setProductList] = props;
     const [title, setTitle] = useState("");
     const [price, setPrice] = useState("");
     const [description, setDescription] = useState("");
@@ -12,7 +11,7 @@ const CreateProduct = (props) => {
         e.preventDefault();
 
         axios
-            .post("http://127.0.0.1:8000/api/products", {
+            .post("http://localhost:8000/api/products", {
                 title, //longhand = title : title
                 price,
                 description
