@@ -6,15 +6,18 @@
 .form-fields {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-radius: 45px;
   margin: auto;
   background-color: crimson;
   color: seashell;
-  width: 45vw;
-  padding: 10px;
+
+  width: 400px;
+  padding: 15px;
 }
 
 .form-fields>input {
+  padding: 10px;
   border-radius: 10px;
 }
 
